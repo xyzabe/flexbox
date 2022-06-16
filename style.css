@@ -1,68 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-
 *{
-    box-sizing: border-box;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
-
-.container {
+body{
+    background-color: rgb(1, 1, 24);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-.card {
-    background-color: hsl(31, 77%, 52%);
-    padding: 60px 30px;
-    font-size: 15px;
-    width: 20%;
-    border-radius: 5px 0 0 5px;
-}
-.card2 {
-    background-color: hsl(184, 100%, 22%);
-    padding: 60px 30px;
-    font-size: 15px;
-    width: 20%;
-}
-.card3 {
-    background-color: hsl(179, 100%, 13%);
-    padding: 60px 30px;
-    font-size: 15px;
-    width: 20%;
-    border-radius: 0 5px 5px 0;
-}
+    place-items: center;
+    min-height: 100vh;
 
-.card-body, .card-header {
-    color: #fff;
 }
-.card-header {
-    font-family: 'Lexend Deca', sans-serif;
-    text-transform: uppercase;
+main{
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e'
+;
+gap: 10px;
+width: 50%;
+margin: auto;
 }
-.card-body {
-    font-family: cursive;
-    margin: 0 0 60px 0;
+main div{
+    padding: 2em;
+    text-align: center;
+    border-radius: 1px;
 }
-
-a {
-    background-color: #fff;
-    border: none;
-    padding: 15px 18px;
-    border-radius: 25px;
+.orange{
+    background-color: orangered;
+    grid-area: a;
 }
-.one {
-    color: hsl(31, 77%, 52%);
+.yellow{
+    background-color: orange;
+    grid-area: b;
 }
-.two {
-    color: hsl(184, 100%, 22%);
+.green{
+    background-color: green;
+    grid-area: c;
 }
-.three {
-    color: hsl(179, 100%, 13%);
+.skyblue1{
+    background-color: rgb(0, 195, 255);
+    grid-area: d;
 }
-a:hover {
-    background-color: transparent;
-    color: #fff;
-    border: solid 2px #fff;
-    transition: ease-in 0.2s;
+.skyblue2{
+    background-color: rgb(0, 195, 255);
+    grid-area: e;
 }
